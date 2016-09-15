@@ -217,6 +217,7 @@ body {
     width: 10px;
     height: 10px;
     background: #000;
+    clip-path: circle(50% at 50% 50%);
     &::after {
       content: attr(data-name);
       font-family: 'Segoe UI','Noto Sans','Open Sans', sans-serif;

@@ -3,15 +3,15 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 app.get('/', function(req, res) {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/client/index.html');
 });
 
 app.get('/css/:name', function(req, res) {
-  res.sendFile(__dirname + '/css/' + req.params.name);
+  res.sendFile(__dirname + '/client/css/' + req.params.name);
 });
 
 app.get('/js/:name', function(req, res) {
-  res.sendFile(__dirname + '/js/' + req.params.name);
+  res.sendFile(__dirname + '/client/js/' + req.params.name);
 });
 
 io.on('connection', function(socket) {

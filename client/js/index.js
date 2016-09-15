@@ -119,7 +119,7 @@ $(document).on('mousemove', function(e) {
     ctx.strokeStyle = App.color;
     ctx.lineWidth = App.lineWidth;
     ctx.shadowColor = App.color;
-    ctx.shadowBlur = App.lineWidth + 10;
+//     ctx.shadowBlur = App.lineWidth + 10;
     ctx.lineJoin = "round";
     ctx.lineCap = "round";
     ctx.stroke();
